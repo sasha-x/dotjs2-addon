@@ -7,7 +7,9 @@ Overview
 In Opera browser there was (is?) cool feature: userscripts (http://www.opera.com/docs/userjs/) from local disk.
 In Firefox this function was applied in https://github.com/rlr/dotjs-addon
 But new WebExtensions API close direct way to do it.
-It is attempt to force FF to use local .js on target sites.
+ 
+It is attempt to force FF to use local .js on a favorite sites.
+Based on dotjs plugin.
 Now it works with dirty hacks, on Windows.
 "jQuery everywhere" included (via CDN now).
 

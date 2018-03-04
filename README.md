@@ -13,6 +13,11 @@ Based on dotjs plugin.
 Now it works with dirty hacks, on Windows.
 "jQuery everywhere" included (via CDN now).
 
+Disadvantages are:
+- more complex installation
+- need to edit user.js when new <site>.js created
+- not so convenient default path for <site>.js files
+ 
 Tested on FF Quantum 58.0.2 x64 Win7.
 
 Installation

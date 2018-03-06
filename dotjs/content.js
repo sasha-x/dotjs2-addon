@@ -64,11 +64,3 @@ for (var i = 0; i < lvl; i++) {
 files.forEach(function(file) {
 	addJs(srcDir + file + ".js");
 });
-
-//jQuery everywhere
-if(typeof(jQuery) == "undefined"){
-	var jqsrc = "https://code.jquery.com/jquery-3.3.1.min.js";
-	var s = addJs(jqsrc);
-	s.integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=";
-	s.crossorigin="anonymous";
-}

@@ -11,7 +11,7 @@ But new WebExtensions API close direct way to do it.
 It is attempt to force FF to use local .js on a favorite sites.
 Based on dotjs plugin.
 Now it works with dirty hacks, on Windows.
-"jQuery everywhere" included (via CDN now).
+~"jQuery everywhere" included (via CDN now).~
 
 Disadvantages are:
 - more complex installation

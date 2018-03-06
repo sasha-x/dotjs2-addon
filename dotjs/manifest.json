@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "dotjs",
-  "version": "0.1",
+  "version": "0.2",
  
   "description": "New generation of https://github.com/rlr/dotjs-addon",
   "icons": {
@@ -21,11 +21,6 @@
 	  "matches": ["<all_urls>"],
 	  "js": ["content.js"]
 	}
-	//,
-    //{
-    //  "matches": ["*://redmine.atsaero.ru/*"],
-    //  "js": ["borderify.js"]
-    //}
   ]
 
 }

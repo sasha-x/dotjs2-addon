@@ -1,6 +1,3 @@
-//alert(jQuery.fn.jquery);
-//alert(document.domain);
-
 //var src = "http://localhost/default.js";
 
 function getOsName(){

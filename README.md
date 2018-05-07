@@ -11,7 +11,6 @@ But new WebExtensions API close direct way to do it.
 It is attempt to force FF to use local .js on a favorite sites.
 Based on dotjs plugin.
 
-**Upd**
 
 v.1 drafted.
 
@@ -21,6 +20,7 @@ Advantages:
 - no limitations of prev version
 - https sites served ok
 - "jquery everywhere" (via CDN) included
+  - **Upd**: somewhere blocked by "Content Security Policy" header. **TODO**
 
 Disadvantages:
 - extension expects your js available on `http://127.0.0.1:8000/<domain>.js`, so local web server app required

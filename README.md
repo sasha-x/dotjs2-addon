@@ -48,3 +48,8 @@ TODO
 - test on windows
 
 
+About user css
+--------------
+
+FF has <profile dir>/chrome/userContent.css support. 
+ No extension basically need.

@@ -10,21 +10,41 @@ But new WebExtensions API close direct way to do it.
  
 It is attempt to force FF to use local .js on a favorite sites.
 Based on dotjs plugin.
-Now it works with dirty hacks, on Windows.
-~"jQuery everywhere" included (via CDN now).~
 
-Disadvantages are:
-- more complex installation
-- need to edit user.js when new <site>.js created
-- not so convenient default path for <site>.js files
- 
-Tested on FF Quantum 58.0.2 x64 Win7.
+**Upd**
+
+v.1 drafted.
+
+Advantages:
+- it works :o)
+- simple installation
+- no limitations of prev version
+- https sites served ok
+- "jquery everywhere" (via CDN) included
+
+Disadvantages:
+- extension expects your js available on `http://127.0.0.1:8000/<domain>.js`, so local web server app required
+
+Tested on Linux Ubuntu 16.04 FF 59.0.2 x64.
 
 Installation
 ------------
 
-1. Edit user.js. Put to your FF profile dir
-2. Restart FF
-3. Put your default.js and other .js files to C:\\js\\ dir
-4. Install .xpi addon
-5. Open console (F12) and check if it works
+1. Set up local web server
+ - your scripts dir (~/.js) as document root
+ - js files should be seen on `http://127.0.0.1:8000/` address
+ - now I use `nohup php -S localhost:8000 -t ~/.js > /dev/null 2>&1 &` shell command in my profile rc
+ - no special https support required if we use `http://127.0.0.1` in URL
+2. Put your .js files to ~/.js/ dir
+ - default.js is for all sites
+3. Install .xpi addon (Download with repo -> Nautilus: .xpi -> open with Firefox)
+4. Open console (F12) and check if it works
+
+
+TODO 
+----
+
+- android version.
+- test on windows
+
+

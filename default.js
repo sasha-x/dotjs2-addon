@@ -2,5 +2,8 @@
  * Test script for all sites. Put it to C:\js\ dir 
  */
  
-//alert('default');
-console.log('dotjs2 script works!');
+console.log('Default dotjs script loaded!');
+
+jQuery(document).ready(function(){
+	console.log("jQuery available: " + jQuery().jquery);
+});
